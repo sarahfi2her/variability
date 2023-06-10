@@ -1,7 +1,7 @@
 Analyzing phenotypic variability of yeast cells under stress
 
 ### Week 1 
-#### Entropy
+#### Shannon entropy
 - Shannon entropy, in information theory, measures the inherent randomness of a system, quantifying the number of possible states in which a variable could appear and the amount of information known about its possible outcomes
 - As entropy increases, so does the uncertainty of the value of a measured random variable, leading to an increased number of possible states but a decrease in information inherent to its possible outcomes
 - As entropy decreases, the number of possible states in which a variable could appear decreases, and thus the certainty about the value of that measurement increases along with the information known about it
@@ -9,7 +9,7 @@ Analyzing phenotypic variability of yeast cells under stress
 Discrete Shannon entropy is calculated as follows, where each `pk` describes the probability that the random variable measured has the specified associated outcome:
 > `-sum(pk * log(pk))`
 
-In the case of this project, calculating the entropy of, say, GFP fluorescence of a single well at a single timestep is as follows:
+In the case of this project, calculating the entropy of, say, GFP fluorescence in a single well at a single timestep is as follows:
 - The GFP fluorescence of each pixel of each cell is measured
 - The average of each of these pixel's measurements is calculated for each cell
 - We find the distribution of the mean GFP fluorescence of all cells in the well
@@ -19,7 +19,7 @@ In the case of this project, calculating the entropy of, say, GFP fluorescence o
 - The discrete Shannon entropy of a cell's GFP fluorescense in the well is calculated with the given formula, where each `pk` is calculated as follows:
 > `(# of cells in the well whose GFP value falls in bin/interval k) / (total # of cells in the well)`
 
-Joint entropy takes the a number of distributions of the same variable in different condition and combines them, measuring the Shannon entropy of the outcome of a variable that is randomly selected from any included distribution (*The significance of joint entropy will be detailed in a later section*)
+Joint Shannon entropy takes the a number of distributions of the same variable and combines them, measuring the Shannon entropy of the outcome of a variable that is randomly selected from any included distribution (*The significance of joint entropy will be detailed in a later section*)
 
 The joint entropy of GFP fluoresence across all wells at a single timestep is as follows:
 - The GFP fluorescence of each pixel of each cell is measured in all wells
@@ -31,5 +31,5 @@ The joint entropy of GFP fluoresence across all wells at a single timestep is as
 > `(# of hand-picked cells whose GFP value falls in bin/interval k) / (total # of cells sampled)`
 
 #### Mutual information
-- Mutual information measures the amount of dependence one random variable has on another, quantifying the amount of information that two parameters of a measurement share.
-- The higher a mutual information measurement is, the more 
+- Mutual information measures the amount of dependence one random variable has on another, quantifying the amount of information that a set of measurements share
+- The higher a mutual information measurement is, the more information that 
