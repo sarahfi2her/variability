@@ -32,4 +32,10 @@ The joint entropy of GFP fluoresence across all wells at a single timestep is as
 
 #### Mutual information
 - Mutual information measures the amount of dependence one random variable has on another, quantifying the amount of information that a set of measurements share
-- The higher a mutual information measurement is, the more information that 
+- Low mutual information measurements indicate variables that are independent from each other, that is, knowing the value of one variable provides little information as to the value of another
+- High mutual information measurements indicate variables that are dependent, that is, knowing the valie of one variable provides lots of information as to the value of another
+
+Mutual information is calculated as follows:
+> `(joint Shannon entropy) - (mean Shannon entropy)`
+
+
