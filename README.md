@@ -1,7 +1,6 @@
 Analyzing phenotypic variability of yeast cells under stress
 
-### Week 1 
-#### Shannon entropy
+### Shannon entropy
 - Shannon entropy, in information theory, measures the inherent randomness of a system, quantifying the number of possible states in which a variable could appear and the amount of information known about its possible outcomes
 - As entropy increases, so does the uncertainty of the value of a measured random variable, leading to an increased number of possible states but a decrease in information inherent to its possible outcomes
 - As entropy decreases, the number of possible states in which a variable could appear decreases, and thus the certainty about the value of that measurement increases along with the information known about it
