@@ -57,25 +57,30 @@ Now that we know we must discretize our continuous numerical samplings, there re
 > `[min, min+w), [min+w, min+2w), [min+2w, min+3w), ... [min+(x-1)w, max]`, where `w = (max - min)/x`
 - Given a total number of measurements `n`, the `square-root` method will calculate `equal-width` bins, where `w` is defined as follows 
 > `sqrt(n)`
-    - Optimal only in speed and simplicity
+>
+>  Optimal only in speed and simplicity
 - Given a total number of measurements `n`, the `rice` method will calculate `equal-width` bins, where `w` is defined as follows 
 > `2 * (cube root of n)`
-    - Commonly overestimates number of bins required, as it does not take variability into account 
+>
+> Commonly overestimates number of bins required, as it does not take variability into account 
 - Given a total number of measurements `n`, the `sturges` method will calculate `equal-width` bins, where `w` is defined as follows 
 > `log2(n)+1`
-    - Only optimal for normal distributions of data, as it underestimates number of bins for large non-Gaussian datasets
+>
+> Only optimal for normal distributions of data, as it underestimates number of bins for large non-Gaussian datasets
 - The `doane` method is a modification of the `sturges` method, adding a factor of `k` to `w`, where `k` is defined as follows
 > `1 + ( (3*(mean-median)/(std)) / sqrt( (6(n-2))/((n+1)(n+3)) ) )`
-    - An improved version of `sturges`, working better with non-normal datasets
+>
+> An improved version of `sturges`, working better with non-normal datasets
 - Given a total number of measurements `n` and an ordered distribution of measurements `M`, the `fd` method will calculate `equal-width` bins, where `w` is defined as follows
 > `2 * ( ((median of values above median) - (median of values below median)) / (cube root of n) )`
-    - Resilient to outliers, accounts for data variability and data size
+>
+> Resilient to outliers, accounts for data variability and data size
 - Given a total number of measurements `n` and a distribution of measurements `M`, the `scott` method will  `equal-width` bins, where `w` is defined as follows
 > `(3.49 * phi(M)) / (cube root of n)`
-    - Less resilient to outliers, accounts for data variability and data size
-- The `stone` method uses a leave-one-out cross-validation estimate of the integrated squared error of a set of measurements 
-    - Regarded as a generalization of the `scott` method
-- The `auto` binning method uses the bin edges of whichever of the `sturges` and `fd` methods produces more bins 
+>
+> Less resilient to outliers, accounts for data variability and data size
+- The `stone` method uses a leave-one-out cross-validation estimate of the integrated squared error of a set of measurements
+> Regarded as a generalization of the `scott` method
 
 **Unsupervised dynamic binning** is a process of categorizing data without optimization specialized to the desired output but producing an optimal set of intervals unequal in width
 - The Bayesian `block` method manipulates bin edges until its fitness function, depending on the width of each block and the number of data points within each block, is optimized
