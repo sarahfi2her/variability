@@ -23,7 +23,7 @@ The distributions of each of the following features in each well at each timeste
 
 **Plots**
 
-The `colored lines` plot the behavior of entropy distance as a function of time
+The `colored lines` plot the behavior of entropy as a function of time
 - ***(x, y)*** (the time in the experiment at which the distributions were taken, the entropy of the distribution of the well specified in the legend)
 - ***Behavior*** generally increasing (in `rfp` and `gfp`)
 
