@@ -8,7 +8,7 @@ This folder contains the following figures, each plotting a set of measurements 
 ## Figure descriptions
 **Axes**
 
-The`x-axis` describes time, in minutes, of the experiment
+The `x-axis` describes time, in minutes, of the experiment
 - This range has a minimum of ~600 mins (the time in which all wells have at least 50 cells) and a maximum determined by length of the experiment
 
 The `y-axis` describes the entropy of a well's distribution
