@@ -32,9 +32,9 @@ Each row indicates (`method`, `n_bins`, `entropy`) for one of the seven binning 
 A single row indicates (`n_bins`, `bin_edges`) for the optimal, entropy-based, bin configuration for discretizing distribution `*`
 
 #### `bin_entropies_plots/`
-Description in [bin_entropies_plots/README.md]([https://github.com/sarahfi2her/variability/tree/main/20230404/results/bin_selection/bin_entropies_plots#readme])
+Description in [bin_entropies_plots/README.md]([url](https://github.com/sarahfi2her/variability/tree/main/20230404/results/bin_selection/bin_entropies_plots#readme))
 
 #### `distribution_plots/`
-Description in [distribution_plots/README.md]([https://github.com/sarahfi2her/variability/tree/main/20230404/results/bin_selection/distribution_plots#readme])
+Description in [distribution_plots/README.md]([url](https://github.com/sarahfi2her/variability/tree/main/20230404/results/bin_selection/distribution_plots#readme)https://github.com/sarahfi2her/variability/tree/main/20230404/results/bin_selection/distribution_plots#readme)
 
 
