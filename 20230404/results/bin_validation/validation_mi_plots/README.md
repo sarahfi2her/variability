@@ -21,6 +21,7 @@ A joint random sampling of the subset size of one of the following features from
 - mean rfp across all pixels in a cell (`rfp`)
 
 **Plots**
+
 The `colored lines` plot the behavior of mutual information as a function of well sampling size
 - ***(x, y)*** (the number of cells randomly sampled frome each well at a given timestep (specified in the legend), the mutual information calculation between wells)
 - ***Behavior*** logarithmic
