@@ -8,7 +8,7 @@ This folder contains the following figures, each plotting a set of measurements 
 ## Figure descriptions
 **Axes**
 
-The`x-axis` describes time, in minutes, of the experiment
+The `x-axis` describes time, in minutes, of the experiment
 - This range has a minimum of ~600 mins (the time in which all wells have at least 50 cells) and a maximum determined by length of the experiment
 
 The `y-axis` describes the entropy of a well's distribution
@@ -17,13 +17,13 @@ The `y-axis` describes the entropy of a well's distribution
 **Data**
 
 The distributions of each of the following features in each well at each timestep
-- area of a cell (area)
-- mean gfp across all pixels in a cell (gfp)
-- mean rfp across all pixels in a cell (rfp)
+- area of a cell (`area`)
+- mean gfp across all pixels in a cell (`gfp`)
+- mean rfp across all pixels in a cell (`rfp`)
 
 **Plots**
 
-The `colored lines` plot the behavior of entropy distance as a function of time
+The `colored lines` plot the behavior of entropy as a function of time
 - ***(x, y)*** (the time in the experiment at which the distributions were taken, the entropy of the distribution of the well specified in the legend)
 - ***Behavior*** generally increasing (in `rfp` and `gfp`)
 
