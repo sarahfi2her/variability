@@ -1,6 +1,6 @@
 ## Folder contents
 
-This folder contains the following figures, each plotting a set of measurements of the feature that corresponds to their name with x-values averaged in intervals of 10
+This folder contains the following figures, each plotting a set of measurements with x-values averaged in intervals of 10
 
 - `spearman_all_10_no_start.png`
 
