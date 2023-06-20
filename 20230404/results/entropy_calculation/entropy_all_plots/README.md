@@ -17,9 +17,9 @@ The `y-axis` describes the entropy of a well's distribution
 **Data**
 
 The distributions of each of the following features in each well at each timestep
-- area of a cell (area)
-- mean gfp across all pixels in a cell (gfp)
-- mean rfp across all pixels in a cell (rfp)
+- area of a cell (`area`)
+- mean gfp across all pixels in a cell (`gfp`)
+- mean rfp across all pixels in a cell (`rfp`)
 
 **Plots**
 
